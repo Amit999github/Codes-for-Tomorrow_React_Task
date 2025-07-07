@@ -1,12 +1,15 @@
-# React + Vite
+# React Post Viewer App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application that displays posts fetched from an external API using Redux Toolkit for state management. The app supports pagination, card removal with dynamic reflow, and a 5-second startup loader.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Fetch posts from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/posts)
+* Display 6 cards per page
+* Pagination with Previous, Next, and Page Number navigation
+* Remove card via Close Button and dynamically fill the view with the next post to maintain 6 cards
+* Direct page jump by clicking page number buttons
+* 5-second loading screen on app startup
+* Global state management using **useContext Hook**
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
