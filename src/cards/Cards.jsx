@@ -6,19 +6,6 @@ import { PostContext } from "../context/PostContext";
 
 function Cards() {
     const { state , dispatch } = useContext(PostContext)
-//   const [value, setValue] = useState([]);
-
-//   useEffect(() => {
-//     axios
-//       .get("https://jsonplaceholder.typicode.com/posts")
-//       .then((res) => {
-//         console.log(res.status);
-//         setValue(res.data);
-//       })
-//       .catch((e) => {
-//         console.log(e);
-//       });
-//   }, []);
   return (
     <>
       {state.visiblePost.map((post) => (
